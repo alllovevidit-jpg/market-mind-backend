@@ -3,3 +3,4 @@ uvicorn[standard]
 websockets
 requests
 httpx
+yfinance>=0.2.37
