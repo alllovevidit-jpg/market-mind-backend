@@ -939,7 +939,7 @@ function useMarketSocket(customKeys: string[]) {
     const connect = () => {
       setStatus("connecting");
       try {
-        ws = new WebSocket(WS_URL);
+        ws = new WebSocket("wss://market-mind-backend-aipk.onrender.com/ws/market");
       } catch (err) {
         console.error("MarketMind: WebSocket could not be created", WS_URL, err);
         setStatus("offline");
